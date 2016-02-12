@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.ConsoleApp", "MyDailyDairy.ConsoleApp\MyDailyDairy.ConsoleApp.csproj", "{44863EF6-B5E3-4A4D-8BE4-0EC721E455E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared Projects", "Shared Projects", "{B56B571A-D9A8-447E-807C-999D948D5E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.Data.ADO", "MyDailyDairy.Data.ADO\MyDailyDairy.Data.ADO.csproj", "{FC472701-9F21-4090-9563-85B49C17865F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44863EF6-B5E3-4A4D-8BE4-0EC721E455E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44863EF6-B5E3-4A4D-8BE4-0EC721E455E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44863EF6-B5E3-4A4D-8BE4-0EC721E455E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44863EF6-B5E3-4A4D-8BE4-0EC721E455E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC472701-9F21-4090-9563-85B49C17865F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC472701-9F21-4090-9563-85B49C17865F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC472701-9F21-4090-9563-85B49C17865F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC472701-9F21-4090-9563-85B49C17865F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC472701-9F21-4090-9563-85B49C17865F} = {B56B571A-D9A8-447E-807C-999D948D5E28}
+	EndGlobalSection
+EndGlobal
