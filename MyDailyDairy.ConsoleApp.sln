@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared Projects", "Shared P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.Data.ADO", "MyDailyDairy.Data.ADO\MyDailyDairy.Data.ADO.csproj", "{FC472701-9F21-4090-9563-85B49C17865F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.UI", "MyDailyDairy.UI\MyDailyDairy.UI.csproj", "{33E349F9-36A8-4EA4-8AE2-11821D81DEB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.Data.EF", "MyDailyDairy.Data.EF\MyDailyDairy.Data.EF.csproj", "{86BF17B3-99F6-452C-B30B-157697FDE89F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,11 +27,20 @@ Global
 		{FC472701-9F21-4090-9563-85B49C17865F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC472701-9F21-4090-9563-85B49C17865F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC472701-9F21-4090-9563-85B49C17865F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E349F9-36A8-4EA4-8AE2-11821D81DEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E349F9-36A8-4EA4-8AE2-11821D81DEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E349F9-36A8-4EA4-8AE2-11821D81DEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E349F9-36A8-4EA4-8AE2-11821D81DEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC472701-9F21-4090-9563-85B49C17865F} = {B56B571A-D9A8-447E-807C-999D948D5E28}
+		{86BF17B3-99F6-452C-B30B-157697FDE89F} = {B56B571A-D9A8-447E-807C-999D948D5E28}
 	EndGlobalSection
 EndGlobal
