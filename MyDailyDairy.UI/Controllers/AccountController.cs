@@ -42,7 +42,16 @@ namespace MyDailyDairy.UI.Controllers
             if (objUser != null)
             {
                 Session["Auth"] = objUser.UserName;
-                return RedirectToLocal(returnUrl);
+
+                if (objUser.RoleID == 1)
+                {
+                    return RedirectToAction("Index", "Roles", new { area = "Admin" });
+                }
+                else
+                {
+                    
+                    return RedirectToLocal(returnUrl);
+                }
             }
             else
             {
