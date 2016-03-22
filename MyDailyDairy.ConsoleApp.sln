@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.UI", "MyDailyD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDairy.Data.EF", "MyDailyDairy.Data.EF\MyDailyDairy.Data.EF.csproj", "{86BF17B3-99F6-452C-B30B-157697FDE89F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDailyDiary.Repository", "MyDailyDiary.Repository\MyDailyDiary.Repository.csproj", "{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86BF17B3-99F6-452C-B30B-157697FDE89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FC472701-9F21-4090-9563-85B49C17865F} = {B56B571A-D9A8-447E-807C-999D948D5E28}
 		{86BF17B3-99F6-452C-B30B-157697FDE89F} = {B56B571A-D9A8-447E-807C-999D948D5E28}
+		{1242CBE1-DF8A-4320-B698-DAB46CB2E1DA} = {B56B571A-D9A8-447E-807C-999D948D5E28}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
 	EndGlobalSection
 EndGlobal

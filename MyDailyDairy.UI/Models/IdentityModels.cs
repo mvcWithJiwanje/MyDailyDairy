@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.Owin;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace MyDailyDairy.UI.Models
 {
@@ -36,5 +38,27 @@ namespace MyDailyDairy.UI.Models
         {
             return new ApplicationDbContext();
         }
+    }
+
+    public class ApplicationRoleManager : RoleManager<IdentityRole>
+    {
+        public ApplicationRoleManager(IRoleStore<IdentityRole, string> roleStore)
+            : base(roleStore)
+        {
+            
+        }
+
+        public static ApplicationRoleManager Create(
+            IdentityFactoryOptions<ApplicationRoleManager> options, IOwinContext context)
+        {
+            return new ApplicationRoleManager(
+                new RoleStore<IdentityRole>(context.Get<ApplicationDbContext>()));
+        }
+    }
+    public class ApplicationRole : IdentityRole
+    {
+        public ApplicationRole() : base() { }
+        public ApplicationRole(string name) : base(name) { }
+        public string Description { get; set; }
     }
 }

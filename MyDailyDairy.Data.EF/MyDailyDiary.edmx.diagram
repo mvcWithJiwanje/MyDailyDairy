@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="efbe066324b94392a3ec7c12726ecc4c" Name="Diagram1">
+        <EntityTypeShape EntityType="MyDailyDiaryModel.Language" Width="1.5" PointX="6" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDailyDiaryModel.PostMedia" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDailyDiaryModel.PostNotification" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDailyDiaryModel.Post" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDailyDiaryModel.Role" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyDailyDiaryModel.User" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_Posts_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_PostMedia_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_PostMedia_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_PostNotification_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_Posts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MyDailyDiaryModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

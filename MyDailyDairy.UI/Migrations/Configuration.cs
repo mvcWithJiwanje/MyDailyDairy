@@ -33,7 +33,11 @@ namespace MyDailyDairy.UI.Migrations
                     Email = string.Format("Email{0}@mydailydairy.com", i.ToString()),
                 };
                 manager.Create(user, string.Format("Password{0}", i.ToString()));
+
+                
             }
+
+           
 
             //  This method will be called after migrating to the latest version.
 
