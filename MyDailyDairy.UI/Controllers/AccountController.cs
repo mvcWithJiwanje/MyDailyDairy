@@ -102,8 +102,15 @@ namespace MyDailyDairy.UI.Controllers
                     UserName = model.Email,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
+                    Password = model.Password,
                     Email = model.Email,
+                    IsLocked = false,
+                    IsApproved = false,
+                    RoleID = 2
                 };
+
+                _unit.Users.Create(user);
+                _unit.Commit();
 
                 //var result = await UserManager.CreateAsync(user, model.Password);
                 //if (result.Succeeded)
