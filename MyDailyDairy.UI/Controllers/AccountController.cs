@@ -1,4 +1,5 @@
 ﻿using MyDailyDairy.Data.EF;
+using MyDailyDairy.UI.Filters;
 using MyDailyDairy.UI.Models;
 using System;
 using System.Collections.Generic;
@@ -21,8 +22,20 @@ namespace MyDailyDairy.UI.Controllers
         //
         // GET: /Account/Login
         [AllowAnonymous]
+        [MyCookieSettingFilterAttribute]
         public ActionResult Login(string returnUrl)
         {
+            HttpCookie myCookie = Request.Cookies["LastURl"];
+            if(myCookie!=null)
+            {
+                var request = myCookie.Value;
+
+                Uri u = new Uri(request);               
+
+                return RedirectToAction(request);
+            }
+
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }

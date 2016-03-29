@@ -1,4 +1,5 @@
-﻿using MyDailyDairy.UI.Models;
+﻿using MyDailyDairy.UI.Filters;
+using MyDailyDairy.UI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,15 +9,15 @@ using Uow.Package.Data;
 
 namespace MyDailyDairy.UI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private IUnitOfWork _unit;
 
         public HomeController()
         {
             _unit = new UnitOfWork();            
-        }       
-
+        }
+        [MyCookieSettingFilterAttribute]
         public ActionResult Index()
         {
             return View();
